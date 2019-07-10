@@ -16,9 +16,7 @@ public class MainApplication {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("consumer.xml");
         OrderService orderService = context.getBean(OrderService.class);// 获取远程服务代理
         orderService.initOrder("1");
-        System.out.println("调用完成.." +
-                "" +
-                ".");
+        System.out.println("调用完成...");
         try {
             System.in.read();
         } catch (IOException e) {
