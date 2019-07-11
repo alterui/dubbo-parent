@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 public class OrderController {
 
     public String init() {
-        return "";
+        return "woshi haoren ";
     }
 
 }
